@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>入力画面</title>
+  </head>
+  <body>
+    <form action="#" th:action="@{/home}" th:object="${name}" method="post">
+      <div>
+      <h1>今日のおみくじ</h1>
+        <p>氏名</p>
+        <input type="text" class="form-control" th:field="*{name}" />
+        <button type="submit" class="btn btn-default">占う！</button>
+      </div>
+    </form>
+  </body>
+</html>
